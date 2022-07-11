@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.scoreboard {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 300px;
+    margin: 100px auto;
+    font-family:'Quicksand', sans-serif; 
+    background: #FFF0F6;
+}
+
+.scoreboard__name,
+.scoreboard__score {
+    padding: 10px;
+    text-align: center;
+}
+
+.scoreboard__name {
+    font-weight: bold;
+    border-bottom: 1px solid #ddd;
+}
+
+.scoreboard__name--one {
+    color: blue;
+}
+
+.scoreboard__name--two {
+    color: red;
+}
+
+.scoreboard__score {
+    font-size: 2em;
+}
+
+.scoreboard__control {
+    display: flex;
+}
+
+.scoreboard__control-button {
+    flex-grow: 1;
+    border: none;
+    background: #A61E4D;
+    cursor: pointer;
+    font-size: 1.2em;
+}
+
+.scoreboard__control-button:hover {
+    background:  #d6336c;
+}
+
+.scoreboard__control-button:active {
+    background: #ddd;
+}
